@@ -1,0 +1,498 @@
+
+/**** BASE STYLES ****/ 
+
+* {
+	box-sizing: border-box; 
+}
+
+.container {
+	width: 90%;
+	margin: 0 auto;
+	max-width: 1000px;
+}
+
+.clearfix::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+body {
+	background: #F6F7EB;
+}
+
+/**** FONTS ***/ 
+
+.name,
+.primary h2,
+#contact-info h2,
+.services,
+#about-owner h3,
+#benefits h3
+ {
+	font-family: 'Ubuntu', Arial, sans-serif;
+}
+
+h1,
+h3,
+#menu a,
+.quote-btn,
+#contact-info p {
+	font-family: 'Raleway', Arial, sans-serif;
+}
+
+.main-content p,
+.desc {
+	font-family: 'Slabo 27px', serif;
+}
+
+/**** HEADER ***/ 
+
+.main-logo {
+	width: 100px;
+}
+
+.header-container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.main-header {
+	background: #2f64b3;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 100;
+	-webkit-box-shadow: 0 8px 6px -6px rgba(0,0,0,.85);
+	-moz-box-shadow: 0 8px 6px -6px rgba(0,0,0,.85);
+	box-shadow: 0 8px 6px -6px rgba(0,0,0,.85);
+
+}
+
+.established {
+	text-decoration: underline;
+}
+
+/**** NAVIGATION ****/ 
+
+.main-logo {
+	float: left;
+}
+
+#menu {
+	float: right;
+	margin-top: 33.3px;
+	padding-right: 15px;
+}
+
+#menu li {
+	float: left;
+	padding-left: 30px;
+}
+
+#menu a {
+	text-decoration: none; 
+	color: white;
+	text-transform: uppercase;
+	font-size: 1.2em;
+}
+
+#menu a:hover {
+	color: #52d852;
+}
+
+
+.slicknav_menu {
+	display: none;
+}
+
+
+/**** BANNER ***/
+
+#contact-bar {
+	background: #9EC0D9;
+	position: fixed;
+	top: 89px;
+	right: 7%;
+	z-index: 50; 
+	border-radius: 0 0 4px 4px;
+}
+
+#contact-bar span {
+	padding: 3px;
+	display: inline-block;
+}
+
+#contact-bar span,
+#contact-bar a {
+	color: #fff;
+	padding-left: 10px;
+}
+
+#phone {
+	background: url('../img/technology.svg') center left no-repeat;
+	background-size: 12px;
+	margin-left: 10px;
+}
+
+#email {
+	background: url('../img/black.svg') center left no-repeat;
+	background-size: 12px;
+	margin-left: 10px;
+}
+
+.name {
+	margin-top: 0;
+	padding-top: 15px;
+	font-size: 2.7em;
+}
+
+.banner {
+	text-align: center;
+	background: url('../img/rig.jpg');
+	background-size: cover;
+	background-position: center;
+	color: #fff;
+	height: 275px;
+}
+
+
+/**** CONTENT ***/ 
+
+#mobile-phone {
+	text-align: center; 
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.6em;
+}
+
+
+#mobile-phone a {
+	color: black;
+	text-decoration: none;
+	padding: 0 5px 0;
+}
+
+#mobile-phone p {
+	margin-bottom: 0;
+}
+
+#mobile-phone img {
+	width: 45px;
+}
+
+.main-content {
+		padding: 2em 0;
+	}
+
+.primary {
+	line-height: 1.6em;
+	color: #17191b;
+	padding-bottom: 1em;
+}
+
+.secondary video {
+	display: block;
+	margin: 0 auto;
+}
+
+.blockquote {
+	background: url('../img/mark.svg');
+	background-repeat: no-repeat;
+	background-size: 25px 25px;
+	background-position: 0% 5%;
+	max-width: 600px;
+	border-top: 1px solid #9EC0D9;
+	border-bottom: 1px solid #9EC0D9;
+	color: #757575;
+	font-family: 'Raleway';
+	line-height: 1.75em;
+	font-style: italic;
+	margin: 30px auto;
+	padding: 30px;
+	text-align: center;
+}
+
+/**** ABOUT/BENEFITS ****/ 
+
+#about-owner img {
+	border-radius: 50%;
+}
+
+#benefits ul {
+	font-family: 'Raleway', sans-serif;
+	margin-left: 25px;
+	list-style-type: disc;
+}
+
+#benefits li {
+	margin: 5px 0;
+}
+
+
+/**** CARDS ****/ 
+
+.services  {
+	text-align: center;
+	font-size: 2.25em;
+	margin: 0;
+}
+
+.card {
+  width: 300px;
+  height: 447px;
+  margin: 5% auto;
+  box-shadow: 0 0 25px rgba(0,0,0,.3);
+  display: block;
+  background-color: #17191b;
+  border-radius: 4px;
+}
+
+.card-img {
+	height: 225px;
+}
+
+.card-img img {
+  width:100%;
+  border-radius: 4px 4px 0px 0px;
+}
+
+.card-caption {
+	padding: 7px 10px;
+	color: #fff;
+	font-family: sans-serif;
+}
+
+.card-caption h2 {
+	font-family: 'Ubuntu';
+	margin: 10px 0;
+}
+
+/**** PHOTO GALLERY ****/
+
+#photo-gallery {
+	padding-top: 30px;
+	margin: 0 auto 30px;
+} 
+
+/**** TESTIMONIAL ****/ 
+
+.testimonial:first-child {
+	margin-top: 0;
+}
+
+#cust-quotes {
+	padding-top: 50px;
+}
+
+/**** CONTACT ****/ 
+
+#contact-info,
+#contact-info a {
+	margin-top: 13.5%;
+	padding: 15px;
+	color: #fff;
+	background: #17191b;
+	border-radius: 10px;
+	max-width: 600px;
+}
+
+#contact-info h2 {
+	margin-top: 0;
+}
+
+#contact-body {
+	background: url('../img/skulls/skulls.png') repeat;
+
+}
+
+/**** FOOTER ****/
+
+.main-footer {
+	background: #393D42;
+	color: #d9dfe7;
+	font-family: 'Raleway', sans-serif;
+} 
+
+.facebook-icn {
+	float: right;
+}
+
+.facebook-icn img {
+	width: 80px;
+	padding: 10px;
+}
+
+.main-footer p {
+	margin: 0;
+	padding: 0;
+}
+
+.main-footer a {
+	color: #d9dfe7;
+}
+
+.footer-contact {
+	padding: 10px 0;
+	float: left;
+}
+
+.wrapper {
+		min-height: calc(100vh - 130px);
+	}
+
+.contact-wrapper {
+	min-height: calc(100vh - 200px);
+}
+
+/**** MEDIA QUERIES ****/
+
+@media (max-width: 465px) {
+	.facebook-icn img {
+		width: 70px;
+	}
+
+	.footer-contact {
+		width: 70%;
+	}
+
+	.card {
+		width: 275px;
+	}
+
+}
+
+@media (min-width: 465px) {
+
+	.name {
+		padding-top: 1em;
+	}
+
+}
+
+@media (max-width: 770px) {
+
+	.main-header,
+	.js #menu,
+	#contact-bar {
+		display: none;
+	}
+
+	.js .slicknav_menu {
+		display: block;
+	}
+}
+
+@media (min-width: 769px) {  /** Major breakpoint @ Tablet -> Desktop size **/
+
+	/**** HEADER/NAV ****/
+
+	body {
+		padding-top: 85.703px;
+	}
+
+	.main-header {
+		display: block;
+	}
+
+	.banner {
+		height: 400px;
+		text-align: left; 
+	}
+
+	.banner h3,
+	#about-owner h3,
+	#benefits h3
+	 {
+		font-size: 1.5em;
+	}
+
+	.name {
+		font-size: 4.5em;
+		padding-top: 1em;
+	}
+
+	.quote {
+		padding-top: 1.75em;
+	}
+
+
+	/**** CONTENT ****/
+
+	#mobile-phone {
+		display: none;
+	}
+
+	.primary p,
+	.secondary p {
+		font-size: 1.3em;
+		line-height: 1.6em;
+	}
+
+	.col {
+		float: left;
+	}
+
+	.primary {
+		width: 40%;
+		padding-right: 25px;
+	}
+
+	.primary h2,
+	#contact-info h2 {
+		margin-top: 0;
+		font-size: 2.25em;
+	}
+
+	.secondary {
+		width: 60%; 
+		padding-left: 25px;
+	}
+
+	#about-owner img {
+	float: left;
+	max-width: 50%;
+	padding: 15px;
+}
+
+	/**** TESTIMONIALS ****/
+
+	.testimonial {
+		width: 40%;
+		margin-top: 0;
+	}
+
+	.left {
+		margin-right: 10%;
+	}
+
+	.right {
+		margin-right: 10%;
+	}
+
+}
+
+@media (min-width: 900px) {
+
+	.card {
+		float: left;
+	}
+
+	.card:not(:first-child) {
+		margin-left: 50px;
+	}
+
+}
+
+
+/**** Temp Mark-Up ****/ 
+
+/*	color: red;
+	border: 2px solid red;
+} */
+
+
+
+
+
+
+
